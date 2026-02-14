@@ -1,0 +1,13 @@
+{
+  "title": "Language Backend SLO Dashboard",
+  "panels": [
+    {"title": "p95 latency", "type": "timeseries", "target": "request_latency_ms.p95"},
+    {"title": "4xx/5xx ratio", "type": "timeseries", "target": "status_ratio"},
+    {"title": "queue depth", "type": "timeseries", "target": "queue.depth"},
+    {"title": "refresh revoke hit rate", "type": "timeseries", "target": "refresh_revoke_hit_rate"}
+  ],
+  "slo": {
+    "availability_percent": 99.9,
+    "p95_latency_ms": 300
+  }
+}
